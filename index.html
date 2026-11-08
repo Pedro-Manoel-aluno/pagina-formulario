@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário-RPG</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+  
+<body>
+  <header>
+    <h1>Lendas de Valtherion - RPG clássico</h1>
+    <p>
+      Antes que os grandes reinos erguessem suas muralhas e suas civilizações escrevessem a própria história, o mundo já guardava mistérios que poucos seriam capazes de compreender.
+      Entre as antigas lendas que atravessaram gerações, um nome permanece vivo: Valtherion.
+      Alguns dizem que foi um dragão primordial, uma criatura de poder incomparável.
+      Outros acreditam que sua existência está ligada à própria origem da magia.
+      Porém, com o passar dos séculos, os registros se perderam, e a verdade tornou-se cada vez mais difícil de distinguir das histórias.
+      Agora, em um mundo habitado por humanos, elfos, anões e inúmeras outras criaturas, reinos prosperam, antigas ruínas escondem segredos e perigos espreitam além das terras conhecidas.
+      Riquezas, descobertas, glória e mistérios aguardam aqueles que ousam trilhar esse caminho.
+      E você, aventureiro, está preparado para escrever sua <b>própria história</b>?
+    </p>
+
+    <h2>Ficha de Inscrição do Aventureiro</h2>
+    <p style="margin-bottom: 30px;">
+      <i>preencha sua ficha e prepare-se para embarcar em uma jornada por reinos ancestrais, perigos desconhecidos, descobrir criaturas lendárias e desvendar os mistérios que cercam Valtherion</i>
+    </p>
+    
+  </header>
+  
+  <main>
+    <form>
+      <fieldset>
+        <legend>Dados de login do Usuário</legend>
+        <label for="Usuario">Nome do Jogador:</label>
+        <input type="text" id="Usuario" name="Nome do Usuário" required>
+          
+        <label for="Email">Seu e-mail:</label>
+        <input type="email" id="Email" name="email do Jogador" required>
+
+        <label for="senha">Digite sua Senha:</label>
+        <input type="password" id="senha" name="Senha do Jogador" required>
+
+        <label for="telefone">Seu Telefone:</label>
+        <input type="tel" id="telefone" name="Telefone do Jogador" required>
+      </fieldset>
+      <fieldset>
+        <legend>Histórico do Aventureiro</legend>
+        <label for="nascimento-data">Data de nascimento do personagem:</label>
+        <input type="date" id="nascimento-data" name="Data de nascimento do personagem" required>
+
+        <label for="Horario">Horário do nascimento:</label>
+        <input type="time" id="Horario" name="Horário do nascimento do personagem" required>
+
+        <label for="aventura">Sua primeira aventura:</label>
+        <input type="datetime-local" id="aventura" name="Tempo que começou a aventura do personagem" required>
+
+        <label for="guilda">Entrada em uma guilda:</label>
+        <input type="month" id="guilda" name="Ano em que ingressou em uma guilda" required>
+
+        <label for="treinamento">Começo do treinamento:</label>
+        <input type="week" id="treinamento" name="Quando começou o seu treinamento" required>
+        
+      </fieldset>
+      <fieldset>
+        <legend>Criação do Aventureiro</legend>
+        <label for="Nome">Nome do Aventureiro:</label>
+        <input type="text" id="Nome" name="Nome do Personagem" required>
+
+        <label for="cor">Cor de pele do Aventureiro</label>
+        <input type="color" id="cor" name="cor do personagem">
+
+        <p class="desformatar">Gênero do Aventureiro:</p>
+        <input type="radio" id="masculino" name="gênero" value="masculino" required>
+        <label for="masculino" class="opcao">Masculino</label>
+        <br>
+        <input type="radio" id="feminino" name="gênero" value="feminino">
+        <label for="feminino" class="opcao">Feminino</label>
+
+        <p class="desformatar">Sua classe:</p>
+        <input type="radio" id="mago" name="classe" value="mago" required>
+        <label for="mago" class="opcao">Mago</label>
+        <br>
+        <input type="radio" id="guerreiro" name="classe" value="guerreiro">
+        <label for="guerreiro" class="opcao">Guerreiro</label>
+        <br>
+        <input type="radio" id="arqueiro" name="classe" value="arqueiro">
+        <label for="arqueiro" class="opcao">Arqueiro</label>
+        <br>
+        <input type="radio" id="assassino" name="classe" value="assassino">
+        <label for="assassino" class="opcao">Assassino</label>
+        <br>
+        <input type="radio" id="curandeiro" name="classe" value="curandeiro">
+        <label for="curandeiro" class="opcao">Curandeiro</label>
+        <br>
+        <input type="radio" id="lanceiro" name="classe" value="lanceiro">
+        <label for="lanceiro" class="opcao">Lanceiro</label>
+        <br>
+        <input type="radio" id="paladino" name="classe" value="paladino">
+        <label for="paladino" class="opcao">Paladino</label>
+
+        <p class="desformatar">Sua espécie:</p>
+        <input type="radio" id="humano" name="especie" value="humano" required>
+        <label for="humano" class="opcao">Humano</label>
+        <br>
+        <input type="radio" id="elfo" name="especie" value="elfo">
+        <label for="elfo" class="opcao">Elfo</label>
+        <br>
+        <input type="radio" id="anao" name="especie" value="anao">
+        <label for="anao" class="opcao">Anão</label>
+        <br>
+        <input type="radio" id="orc" name="especie" value="orc">
+        <label for="orc" class="opcao">Orc</label>
+        <br>
+        <input type="radio" id="argoniano" name="especie" value="argoniano">
+        <label for="argoniano" class="opcao">Argoniano (homem-lagarto)</label>
+        <br>
+        <input type="radio" id="metamorfo" name="especie" value="metamorfo">
+        <label for="metamorfo" class="opcao">Metamorfo</label>
+        <br>
+        <input type="radio" id="draconato" name="especie" value="draconato">
+        <label for="draconato" class="opcao">Draconato</label>
+        <br>
+        <input type="radio" id="fae" name="especie" value="fae">
+        <label for="fae" class="opcao">Fada</label>
+        <br>
+        <input type="radio" id="goblin" name="especie" value="goblin">
+        <label for="goblin" class="opcao">Goblin</label>
+
+        <p class="desformatar">Equipamentos iniciais:</p>
+        <input type="checkbox" id="manto" name="equipamentos" value="manto">
+        <label for="manto" class="opcao">Manto rasgado</label>
+        <br>
+        <input type="checkbox" id="armadura" name="equipamentos" value="armadura">
+        <label for="armadura" class="opcao">Armadura enferrujada</label>
+        <br>
+        <input type="checkbox" id="espada" name="equipamentos" value="espada">
+        <label for="espada" class="opcao">Espada desgastada</label>
+        <br>
+        <input type="checkbox" id="cajado" name="equipamentos" value="cajado">
+        <label for="cajado" class="opcao">Cajado de madeira</label>
+        <br>
+        <input type="checkbox" id="adagas" name="equipamentos" value="adagas">
+        <label for="adagas" class="opcao">Adagas velhas</label>
+        <br>
+        <input type="checkbox" id="arco" name="equipamentos" value="arco">
+        <label for="arco" class="opcao">Arco de madeira + 30 flechas</label>
+        <br>
+        <input type="checkbox" id="martelo" name="equipamentos" value="martelo">
+        <label for="martelo" class="opcao">Martelo grande e velho</label>
+        <br>
+        <input type="checkbox" id="pocoes" name="equipamentos" value="pocoes">
+        <label for="pocoes" class="opcao">5 frascos de poções</label>
+        <br>
+        <input type="checkbox" id="mana" name="equipamentos" value="mana">
+        <label for="mana" class="opcao">5 frascos de mana</label>
+        <br>
+        <input type="checkbox" id="grimorio" name="equipamentos" value="grimorio">
+        <label for="grimorio" class="opcao">Grimório básico</label>
+        <br>
+        <input type="checkbox" id="mochila" name="equipamentos" value="mochila">
+        <label for="mochila" class="opcao">Mochila velha</label>
+        <br>
+        <input type="checkbox" id="cantil" name="equipamentos" value="cantil">
+        <label for="cantil" class="opcao">Cantil de água</label>
+        <br>
+        <input type="checkbox" id="corda" name="equipamentos" value="corda">
+        <label for="corda" class="opcao">Corda de 10 metros</label>
+        <br>
+        <input type="checkbox" id="mapa" name="equipamentos" value="mapa">
+        <label for="mapa" class="opcao">Mapa incompleto</label>
+        <br>
+        <input type="checkbox" id="bussola" name="equipamentos" value="bussola">
+        <label for="bussola" class="opcao">Bússola antiga</label>
+        <br>
+        <input type="checkbox" id="moedas" name="equipamentos" value="moedas">
+        <label for="moedas" class="opcao">Bolsa com moedas de cobre</label>
+        <br>
+        <input type="checkbox" id="bandagens" name="equipamentos" value="bandagens">
+        <label for="bandagens" class="opcao">Bandagens simples</label>
+        <br>
+        <input type="checkbox" id="pederneira" name="equipamentos" value="pederneira">
+        <label for="pederneira" class="opcao">Pederneira</label>
+
+        <p class="desformatar">Atributos do aventureiro:</p>
+
+        <label for="forca">Força:</label>
+        <input type="number" id="forca" name="forca" min="1" max="4" value="2" required>
+
+        <label for="agilidade">Agilidade:</label>
+        <input type="number" id="agilidade" name="agilidade" min="1" max="4" value="2" required>
+
+        <label for="inteligencia">Inteligência:</label>
+        <input type="number" id="inteligencia" name="inteligencia" min="1" max="4" value="1" required>
+
+        <label for="dominio">Domínio da habilidade principal:</label>
+        <input type="range" id="dominio" name="dominio" min="0" max="100" value="50">
+
+        <label for="referencia">Link para a descrição do aventureiro (opcional):</label>
+        <input type="url" id="referencia" name="referencia" placeholder="https://descricao...">
+
+        <label for="historia">Anexe a história do seu personagem:</label>
+        <input type="file" id="historia" name="historia" accept=".txt,.pdf,.doc,.docx">
+
+        <label for="habilidade">Pesquisar uma habilidade:</label>
+        <input type="search" id="habilidade" name="habilidade" list="habilidades" placeholder="Digite uma habilidade...">
+
+          <datalist id="habilidades">
+             <option value="Bola de fogo">
+             <option value="Batida sônica">
+             <option value="Barreira arcana">
+             <option value="Brisa cortante">
+             <option value="Cura mágica">
+             <option value="Teletransporte">
+          </datalist>
+        <br>
+        <input type="button" onclick="alert('Parabéns, aventureiro! Sua ficha está pronta. Clique em Enviar para iniciar sua jornada!')" value="clique aqui">
+        <br>
+        <input type="hidden" name="Easter_Egg" value="Professor, o senhor é muito gente boa, um professor bacana e top para explicar os assuntos!">
+
+        <input type="submit" value="Enviar Ficha">
+
+        <input type="reset" value="Refazer Ficha">
+
+        <input type="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScgTczWb0_kEV-x7tBFc0eTgdcU-nrlgZ5Dcrp3Bz4ss2cbjABhDnPPys&s=10" alt="Enviar Ficha">
+
+      </fieldset>
+    </form>
+
+    
+  </main> 
+<footer>Valtherion — Universo fictício de RPG de fantasia medieval</footer>
+  
+</body>
+</html>
